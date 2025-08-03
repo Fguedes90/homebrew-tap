@@ -20,7 +20,15 @@ class Lazycelery < Formula
   end
 
   def install
-    bin.install "lazycelery"
+    if OS.mac?
+      if Hardware::CPU.arm?
+        bin.install "lazycelery-macos-aarch64" => "lazycelery"
+      else
+        bin.install "lazycelery-macos-x86_64" => "lazycelery"
+      end
+    else
+      bin.install "lazycelery-linux-x86_64" => "lazycelery"
+    end
   end
 
   test do

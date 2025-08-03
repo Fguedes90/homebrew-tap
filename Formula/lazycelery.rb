@@ -2,7 +2,7 @@ class Lazycelery < Formula
   desc "A terminal UI for monitoring and managing Celery workers and tasks, inspired by lazydocker/lazygit"
   homepage "https://github.com/Fguedes90/lazycelery"
   url "https://github.com/Fguedes90/lazycelery/archive/v0.4.1.tar.gz"
-  sha256 "PLACEHOLDER_SHA256"
+  sha256 "c060b1314347b0ec6dfeb76cafe17228625dea448fb5b04115de309057437c29"
   license "MIT"
 
   depends_on "rust" => :build
